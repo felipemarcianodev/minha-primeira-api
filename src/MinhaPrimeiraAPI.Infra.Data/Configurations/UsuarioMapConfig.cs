@@ -28,6 +28,7 @@ namespace MinhaPrimeiraAPI.Infra.Data.Configurations
                   .HasColumnType("varchar(1000)");
 
             builder.Property(x => x.DataCadastro)
+                  .IsRequired()
                   .HasColumnName("dt_cadastro")
                   .HasColumnType("datetime");
 
