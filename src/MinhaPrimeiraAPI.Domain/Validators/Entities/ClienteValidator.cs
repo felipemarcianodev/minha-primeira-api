@@ -1,7 +1,6 @@
 ﻿using FluentValidation;
 using FluentValidation.Results;
 using MinhaPrimeiraAPI.Domain.Entities;
-using System;
 
 namespace MinhaPrimeiraAPI.Domain.Validators.Entities
 {
