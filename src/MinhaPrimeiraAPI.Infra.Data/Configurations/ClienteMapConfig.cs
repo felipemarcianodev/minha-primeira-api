@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using MinhaPrimeiraAPI.Domain.Entities;
 
-
 namespace MinhaPrimeiraAPI.Infra.Data.Configurations
 {
     internal class ClienteMapConfig : IEntityTypeConfiguration<Cliente>
