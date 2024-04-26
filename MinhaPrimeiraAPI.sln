@@ -13,7 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinhaPrimeiraAPI.Test", "te
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{C40B303A-FEB8-495E-85AE-24AE3DD10C20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinhaPrimeiraAPI.Infra.Data", "src\MinhaPrimeiraAPI.Infra.Data\MinhaPrimeiraAPI.Infra.Data.csproj", "{FFFE8442-A7DB-434F-857E-7739AA5DC33E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinhaPrimeiraAPI.Infra.Data", "src\MinhaPrimeiraAPI.Infra.Data\MinhaPrimeiraAPI.Infra.Data.csproj", "{FFFE8442-A7DB-434F-857E-7739AA5DC33E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B0171B8C-BA6E-4C05-AA7A-8E3BEF84C5C9}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+		Readme.md = Readme.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
