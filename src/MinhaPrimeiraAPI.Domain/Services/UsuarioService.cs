@@ -4,7 +4,6 @@ using MinhaPrimeiraAPI.Domain.Interfaces.Repositories;
 using MinhaPrimeiraAPI.Domain.Interfaces.Services;
 using MinhaPrimeiraAPI.Domain.Notifications;
 using MinhaPrimeiraAPI.Domain.Validators.Entities;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace MinhaPrimeiraAPI.Domain.Services

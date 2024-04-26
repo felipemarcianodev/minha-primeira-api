@@ -24,6 +24,7 @@ namespace MinhaPrimeiraAPI.Infra.Data.Configurations
                    .HasColumnType("varchar(100)");
 
             builder.Property(x => x.Senha)
+                  .IsRequired()
                   .HasColumnName("senha")
                   .HasColumnType("varchar(1000)");
 
