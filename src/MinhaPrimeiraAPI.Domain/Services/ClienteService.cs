@@ -40,6 +40,13 @@ namespace MinhaPrimeiraAPI.Domain.Services
                 return;
             }
 
+            var clienteExiste = await _clienteRepository.VerificarDuplicidadeAsync(Guid.Empty, clienteCadastrarDto.Nome, clienteCadastrarDto.Email);
+            if (clienteExiste)
+            {
+                _notification.AddNotifications("Já existe um usuário com esses esses dados!");
+                return;
+            }
+
             var cliente = new Cliente(clienteCadastrarDto.Nome, clienteCadastrarDto.Email, clienteCadastrarDto.Celular, Guid.NewGuid());
             var fluentValidator = new ClienteValidator(cliente);
             _notification.AddNotifications(fluentValidator.ValidationResult);

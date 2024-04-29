@@ -4,6 +4,7 @@ using MinhaPrimeiraAPI.Domain.Interfaces.Repositories;
 using MinhaPrimeiraAPI.Domain.Interfaces.Services;
 using MinhaPrimeiraAPI.Domain.Notifications;
 using MinhaPrimeiraAPI.Domain.Validators.Entities;
+using System;
 using System.Threading.Tasks;
 
 namespace MinhaPrimeiraAPI.Domain.Services
@@ -36,6 +37,13 @@ namespace MinhaPrimeiraAPI.Domain.Services
             if (usuarioCadastrarDto is null)
             {
                 _notification.AddNotifications("Os dados do formulário estão inválido!");
+                return;
+            }
+
+            var usuarioExiste = await _usuarioRepository.VerificarDuplicidadeAsync(Guid.Empty, usuarioCadastrarDto.Nome, usuarioCadastrarDto.Email);
+            if (usuarioExiste)
+            {
+                _notification.AddNotifications("Já existe um usuário com esses esses dados!");
                 return;
             }
 
