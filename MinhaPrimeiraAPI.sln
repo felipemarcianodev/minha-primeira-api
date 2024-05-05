@@ -21,6 +21,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Readme.md = Readme.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{83473051-8E14-4B75-8F90-27C3B373E17D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinhaPrimeiraAPI", "src\MinhaPrimeiraAPI\MinhaPrimeiraAPI.csproj", "{E6BB131E-EBAF-48BB-9A1C-AFB6C7BFFBF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,10 @@ Global
 		{FFFE8442-A7DB-434F-857E-7739AA5DC33E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFFE8442-A7DB-434F-857E-7739AA5DC33E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFFE8442-A7DB-434F-857E-7739AA5DC33E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6BB131E-EBAF-48BB-9A1C-AFB6C7BFFBF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6BB131E-EBAF-48BB-9A1C-AFB6C7BFFBF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6BB131E-EBAF-48BB-9A1C-AFB6C7BFFBF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6BB131E-EBAF-48BB-9A1C-AFB6C7BFFBF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +55,7 @@ Global
 		{7C6B5E2F-FE70-4CA0-AA03-675B5DA55D2B} = {C77FDD75-97BE-4599-A85F-CDA38AAFCFFE}
 		{A125A99E-4C95-40BE-AFED-B45F3D03EAA4} = {8A2EF08A-15A2-4A9D-B1E0-265A624F3EAB}
 		{FFFE8442-A7DB-434F-857E-7739AA5DC33E} = {C40B303A-FEB8-495E-85AE-24AE3DD10C20}
+		{E6BB131E-EBAF-48BB-9A1C-AFB6C7BFFBF6} = {83473051-8E14-4B75-8F90-27C3B373E17D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B4C9BBAA-0ABC-4CBF-A300-C4892D0ECF50}
