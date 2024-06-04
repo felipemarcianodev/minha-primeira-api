@@ -37,10 +37,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\src\MinhaPrimeiraAPI.Domain\MinhaPrimeiraAPI.Domain.csproj" />
   </ItemGroup>
 

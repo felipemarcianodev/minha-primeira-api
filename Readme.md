@@ -1,8 +1,8 @@
 ## .NET
-Instalar o .net 8, atualmente o sistema est· usando a vers„o 8.0.200
+Instalar o .net 8, atualmente o sistema est√° usando a vers√£o 8.0.200
 Link para download: https://dotnet.microsoft.com/pt-br/download/dotnet/8.0
 
-## Scripts para criaÁ„o das tabelas 
+## Scripts para cria√ß√£o das tabelas 
 
 ```
 CREATE TABLE IF NOT EXISTS `usuario_tb` (

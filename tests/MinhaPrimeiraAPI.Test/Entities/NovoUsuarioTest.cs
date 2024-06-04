@@ -7,6 +7,8 @@ using Moq;
 using Moq.AutoMock;
 using FluentAssertions;
 using MinhaPrimeiraAPI.Domain.Dto.Usuarios;
+using MinhaPrimeiraAPI.Domain.Notifications;
+using MinhaPrimeiraAPI.Domain.Services;
 
 namespace MinhaPrimeiraAPI.Test.Entities
 {
@@ -44,13 +46,14 @@ namespace MinhaPrimeiraAPI.Test.Entities
                           .And.NotContain(fluentValidator.MensagemSenhaInvalida)
                           .And.NotContain(fluentValidator.MensagemSenhaMaximoCaracteres);
 
-            var usuarioService = new Mock<IUsuarioService>();
+            var notification = new Notification();
+
             var usuarioRepository = new Mock<IUsuarioRepository>();
-            usuarioService.Setup(s => s.AdicionarAsync(usuarioCadastrarDto));
+            var usuarioService = new UsuarioService(notification, usuarioRepository.Object);
             usuarioRepository.Setup(s => s.CreateAsync(usuario));
 
             //Act
-            await usuarioService.Object.AdicionarAsync(usuarioCadastrarDto);
+            await usuarioService.AdicionarAsync(usuarioCadastrarDto);
 
             //Assert
             await usuarioRepository.Object.CreateAsync(usuario);
