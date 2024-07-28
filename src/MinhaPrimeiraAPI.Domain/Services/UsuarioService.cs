@@ -56,10 +56,19 @@ namespace MinhaPrimeiraAPI.Domain.Services
 
             await _usuarioRepository.CreateAsync(usuario).ConfigureAwait(false);
 
-            _notification.SetCreated("Usuario cadastrado com sucesso!");
+            _notification.SetCreated("Usuário cadastrado com sucesso!");
         }
 
-        
+        public async Task<Usuario> ObterPorIdAsync(Guid id)
+        {
+            if (id.Equals(Guid.Empty))
+            {
+                _notification.AddNotifications("Informe o id pra consultar o usuário!");
+                return await Task.FromResult<Usuario>(null);
+            }
+            return await _usuarioRepository.GetByIdAsync(id);
+        }
+
         #endregion Public Methods
     }
 }

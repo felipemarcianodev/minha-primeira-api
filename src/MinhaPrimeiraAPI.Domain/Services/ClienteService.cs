@@ -59,6 +59,17 @@ namespace MinhaPrimeiraAPI.Domain.Services
             _notification.SetCreated("Cliente cadastrado com sucesso!");
         }
 
+        public async Task<Cliente> ObterPorIdAsync(Guid id)
+        {
+            if (id.Equals(Guid.Empty))
+            {
+                _notification.AddNotifications("Informe o id pra consultar o cliente!");
+                return await Task.FromResult<Cliente>(null);
+            }
+
+            return await _clienteRepository.GetByIdAsync(id);
+        }
+
         #endregion Public Methods
     }
 }
